@@ -2,6 +2,11 @@ function takeANumber(currentLine, newCustomer) {
  currentLine.push(newCustomer);
   return ('Welcome, ' + newCustomer + '. You are number ' + currentLine.length + ' in line.');
 }
+function takeANumberAlternative(todayLine, currentLine){
+  todayLine.push(todayLine.length + 1);
+  currentLine.push(todayLine.length)
+}
+
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
